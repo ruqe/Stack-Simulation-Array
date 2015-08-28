@@ -1,0 +1,23 @@
+<div>
+<div>
+	Value: <input type="text" ng-model="inputValue">
+	<button ng-click="push()">Push</button>
+	<button ng-click="pop()">Pop</button>
+	<button ng-click="clear()"> Clear Stack </button>
+	
+</div>
+<p> Top Value is {{top}} </p>
+
+<div>
+<ol>
+    <li ng-repeat="item in array | reverse track by $index">
+      <span>{{item}}</span>
+      
+    </li>
+  </ol>
+</div>
+
+
+<p>1 + 2 = {{ 1 + 2 }}</p>
+ <p> {{array[0]}} </p>
+ </div>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="ArrayStack">
+<head>
+<meta charSet="UTF-8">
+<title>Stack Simulator(Array)</title>
+<script src= "js/angular/angular.js"></script>
+<script src= "js/angular/angular-route.js"></script>
+<script src= "js/angular/angular-animate.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="http://cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+<script src="js/velocity/velocity-animations.js"></script>
+
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+
+<div id="fakeBody" ng-controller='ArrayStackCtrl'>   
+<div id="controlPanel">
+	<span id="value">Value:</span> <input type="text" ng-model="inputValue" ng-disabled="isDisabled">
+	<button ng-click="push()" ng-disabled="isDisabled">Push</button>
+	<button ng-click="pop()" ng-disabled="isDisabled">Pop</button>
+	<button ng-click="clear()" ng-disabled="isDisabled"> Clear Stack </button>
+	
+
+</div>
+
+<div>
+	<p>[<span class="toBeAdded" >{{inputValue}}</span><span class="yaAdded" >{{arrayStuff}}</span></p>
+	<p><span class="toBeDeleted">{{deletedValue}}</span></p> 
+
+
+
+</div>
+
+<img src="https://cdn4.iconfinder.com/data/icons/miu/23/editor_trash_delete_recycle_bin_-512.png" class="trashBin">
+
+
+
+<!-- <div ng-view></div> -->
+</body>
+
+
+</html>

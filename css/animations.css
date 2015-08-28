@@ -1,0 +1,94 @@
+
+.arraystacking.ng-enter, 
+.arraystacking.ng-leave,
+.arraystaction.ng-move{
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  
+}
+
+.arraystacking.ng-enter{
+	
+	opacity:0;
+	position:relative;
+	bottom: 100px;
+}
+
+
+
+.arraystacking.ng-enter-active{
+	opacity: 1;
+	height : 10px;
+	color: blue;
+	position: relative;
+	bottom:0px;
+	
+	
+}
+
+
+.arraystacking.ng-move{
+	color: yellow;
+	position: relative;
+	left:0px;
+}
+
+.arraystacking.ng-move-active{
+	color:red;
+	position:relative;
+	left:200px;
+}
+
+.arraystacking.ng-leave {
+	position:relative;
+	
+	left:0;
+	
+}
+.arraystacking.ng-leave-active
+{
+	opacity: 0;
+	height : 0px;
+	color:blue;
+	position:relative;
+	top: -13px;
+	left:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sample-show-hide {
+  padding:10px;
+  border:1px solid black;
+  background:white;
+}
+
+.sample-show-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.sample-show-hide.ng-hide {
+  opacity:0;
+}

@@ -1,0 +1,36 @@
+.arrayValue{
+	font-size:200%;
+	position:relative;
+	left: 100px;
+}
+
+.toBeAdded{
+	position: absolute;
+	top:20px;
+	left:60px;
+	opacity:0;
+}
+
+#value{
+	float:left;
+	width: 50px;
+	height: 10px;
+}
+
+.yaAdded{
+	position: relative;
+	left: 75px;	
+}
+
+.trashBin{
+	width: 5%;
+	height: auto;
+	position: relative;
+	top: 50px;
+}
+
+.toBeDeleted{
+	position:absolute;
+	top:44px;
+	left:15px;
+}
